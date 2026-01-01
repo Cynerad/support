@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "@cynerad/support",
+  "homepage": "https://localhost.com",
+  "items": [
+    {
+      "name": "string",
+      "type": "registry:lib",
+      "title": "string for library",
+      "description": "A simple hello world component.",
+      "files": [
+        {
+          "path": "./src/support/string/index.ts",
+          "type": "registry:lib"
+        }
+      ]
+    }
+  ]
+}
