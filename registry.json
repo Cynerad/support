@@ -11,7 +11,8 @@
       "files": [
         {
           "path": "./src/support/string/index.ts",
-          "type": "registry:lib"
+          "type": "registry:lib",
+          "target": "lib/support/string.ts"
         }
       ]
     }

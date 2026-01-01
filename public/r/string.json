@@ -7,7 +7,8 @@
     {
       "path": "./src/support/string/index.ts",
       "content": "export function slufigy(test: string) {\r\n  return test;\r\n}\r\n",
-      "type": "registry:lib"
+      "type": "registry:lib",
+      "target": "lib/support/string.ts"
     }
   ],
   "type": "registry:lib"
