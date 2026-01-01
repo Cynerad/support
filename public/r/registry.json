@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "@cynerad/support",
-  "homepage": "https://localhost.com",
+  "homepage": "https://cynerad.github.io/support",
   "items": [
     {
       "name": "string",
