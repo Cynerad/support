@@ -1,3 +1,5 @@
-export function numberC() {
-  return 1;
+function random(length: number): number {
+  return Math.floor(Math.random() * length);
 }
+
+export { random };
