@@ -1,3 +1,10 @@
-export function slufigy(test: string) {
-  return test;
+function slugify() {
+  return "sdjfklas";
 }
+
+const str = {
+  slugify,
+};
+
+export default str;
+export { slugify };

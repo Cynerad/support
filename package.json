@@ -27,7 +27,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky",
-    "registry:build": "shadcn build"
+    "registry:build": "shadcn build",
+    "dev": "vitest",
+    "test": "vitest run"
   },
   "dependencies": {
     "shadcn": "^3.6.2"
@@ -40,7 +42,8 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "tsup": "^8.5.1",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
   },
   "lint-staged": {
     "*": "pnpm lint"
