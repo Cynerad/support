@@ -1,0 +1,74 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "@cynerad/support",
+  "homepage": "https://cynerad.github.io/support",
+  "items": [
+    {
+      "name": "support",
+      "type": "registry:lib",
+      "title": "Helper functions for TypeScript applications",
+      "files": [
+        {
+          "path": "./src/support/array/index.ts",
+          "type": "registry:lib",
+          "target": "lib/support/array.ts"
+        },
+        {
+          "path": "./src/support/string/index.ts",
+          "type": "registry:lib",
+          "target": "lib/support/string.ts"
+        },
+        {
+          "path": "./src/support/number/index.ts",
+          "type": "registry:lib",
+          "target": "lib/support/number.ts"
+        },
+        {
+          "path": "./src/support/benchmark/index.ts",
+          "type": "registry:lib",
+          "target": "lib/support/benchmark.ts"
+        },
+        {
+          "path": "./src/support/cookies/index.ts",
+          "type": "registry:lib",
+          "target": "lib/support/cookies.ts"
+        },
+        {
+          "path": "./src/support/fetch/index.ts",
+          "type": "registry:lib",
+          "target": "lib/support/fetch.ts"
+        },
+        {
+          "path": "./src/support/file-system/index.ts",
+          "type": "registry:lib",
+          "target": "lib/support/file-system.ts"
+        },
+        {
+          "path": "./src/support/hash/index.ts",
+          "type": "registry:lib",
+          "target": "lib/support/hash.ts"
+        },
+        {
+          "path": "./src/support/number/index.ts",
+          "type": "registry:lib",
+          "target": "lib/support/number.ts"
+        },
+        {
+          "path": "./src/support/object/index.ts",
+          "type": "registry:lib",
+          "target": "lib/support/object.ts"
+        },
+        {
+          "path": "./src/support/path/index.ts",
+          "type": "registry:lib",
+          "target": "lib/support/path.ts"
+        },
+        {
+          "path": "./src/support/utils/index.ts",
+          "type": "registry:lib",
+          "target": "lib/support/utils.ts"
+        }
+      ]
+    }
+  ]
+}

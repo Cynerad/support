@@ -1,0 +1,54 @@
+{
+  "name": "@cynerad/support",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@10.10.0",
+  "description": "just skeleton for my typescript library",
+  "author": "your name",
+  "license": "MIT",
+  "keywords": [],
+  "exports": {
+    "./string": {
+      "types": "./dist/string/index.d.ts",
+      "import": "./dist/string/index.js",
+      "require": "./dist/string/index.cjs"
+    },
+    "./number": {
+      "types": "./dist/number/index.d.ts",
+      "import": "./dist/number/index.js",
+      "require": "./dist/number/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky",
+    "registry:build": "shadcn build",
+    "dev": "vitest",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.19",
+    "shadcn": "^3.6.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^6.7.3",
+    "@changesets/cli": "^2.29.8",
+    "@types/node": "^25.0.3",
+    "eslint": "^9.39.2",
+    "eslint-plugin-format": "^1.1.0",
+    "husky": "^9.1.7",
+    "jsdom": "^28.1.0",
+    "lint-staged": "^16.2.7",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
+  },
+  "lint-staged": {
+    "*": "pnpm lint"
+  }
+}
