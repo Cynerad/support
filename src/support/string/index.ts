@@ -1,5 +1,5 @@
 const SPECIAL_CHARTERS = `!"#$%&'()*+,-./:;<=>?@[\\]^_\`{|}~`;
-const SPECIAL_CHARTERS_REGEX = /[!"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~\s]+/g;
+const SPECIAL_CHARTERS_REGEX = /[\s!"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~]+|(?=[A-Z])/;
 
 function after(text: string, value: string): string {
   const index = text.indexOf(value);
@@ -38,7 +38,10 @@ function trim(text: string, characters: string): string {
 }
 
 function camel(text: string): string {
-  return text.split(SPECIAL_CHARTERS_REGEX).map((str, index) => index === 0 ? str.toLowerCase() : capitalize(str)).join("");
+  return text
+    .split(SPECIAL_CHARTERS_REGEX)
+    .map((str, index) => (index === 0 ? str.toLowerCase() : capitalize(str)))
+    .join("");
 }
 
 function capitalize(text: string): string {

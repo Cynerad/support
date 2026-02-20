@@ -33,6 +33,8 @@ it("removes selected chars to trim form left and right", () => {
 
 it("turn string to camel case", () => {
   expect(camel("foo_bar")).toBe("fooBar");
+  expect(camel("foo-bar")).toBe("fooBar");
+  expect(camel("fooBar")).toBe("fooBar");
 });
 
 it("will convert strings delimited by casing, hyphens, or underscores into a space delimited string with each word's first letter capitalized", () => {
