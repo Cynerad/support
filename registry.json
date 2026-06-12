@@ -4,6 +4,7 @@
   "homepage": "https://cynerad.github.io/support",
   "items": [
     {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
       "name": "support",
       "type": "registry:lib",
       "description": "Helper functions for TypeScript applications",
@@ -11,69 +12,69 @@
       "devDependencies": ["@types/node"],
       "files": [
         {
-          "path": "./src/support/array/index.ts",
+          "path": "./src/support/array.ts",
           "type": "registry:lib",
-          "target": "lib/support/array.ts"
+          "target": "@lib/support/array.ts"
         },
         {
-          "path": "./src/support/string/index.ts",
+          "path": "./src/support/string.ts",
           "type": "registry:lib",
-          "target": "lib/support/string.ts"
+          "target": "@lib/support/string.ts"
         },
         {
-          "path": "./src/support/number/index.ts",
+          "path": "./src/support/number.ts",
           "type": "registry:lib",
-          "target": "lib/support/number.ts"
+          "target": "@lib/support/number.ts"
         },
         {
-          "path": "./src/support/benchmark/index.ts",
+          "path": "./src/support/benchmark.ts",
           "type": "registry:lib",
-          "target": "lib/support/benchmark.ts"
+          "target": "@lib/support/benchmark.ts"
         },
         {
-          "path": "./src/support/cookies/index.ts",
+          "path": "./src/support/cookies.ts",
           "type": "registry:lib",
-          "target": "lib/support/cookies.ts"
+          "target": "@lib/support/cookies.ts"
         },
         {
-          "path": "./src/support/fetch/index.ts",
+          "path": "./src/support/fetch.ts",
           "type": "registry:lib",
-          "target": "lib/support/fetch.ts"
+          "target": "@lib/support/fetch.ts"
         },
         {
-          "path": "./src/support/file-system/index.ts",
+          "path": "./src/support/file-system.ts",
           "type": "registry:lib",
-          "target": "lib/support/file-system.ts"
+          "target": "@lib/support/file-system.ts"
         },
         {
-          "path": "./src/support/hash/index.ts",
+          "path": "./src/support/hash.ts",
           "type": "registry:lib",
-          "target": "lib/support/hash.ts"
+          "target": "@lib/support/hash.ts"
         },
         {
-          "path": "./src/support/number/index.ts",
+          "path": "./src/support/number.ts",
           "type": "registry:lib",
-          "target": "lib/support/number.ts"
+          "target": "@lib/support/number.ts"
         },
         {
-          "path": "./src/support/object/index.ts",
+          "path": "./src/support/object.ts",
           "type": "registry:lib",
-          "target": "lib/support/object.ts"
+          "target": "@lib/support/object.ts"
         },
         {
-          "path": "./src/support/path/index.ts",
+          "path": "./src/support/path.ts",
           "type": "registry:lib",
-          "target": "lib/support/path.ts"
+          "target": "@lib/support/path.ts"
         },
         {
-          "path": "./src/support/utils/index.ts",
+          "path": "./src/support/utils.ts",
           "type": "registry:lib",
-          "target": "lib/support/utils.ts"
+          "target": "@lib/support/utils.ts"
         },
         {
-          "path": "./src/support/date/index.ts",
+          "path": "./src/support/date.ts",
           "type": "registry:lib",
-          "target": "lib/support/date.ts"
+          "target": "@lib/support/date.ts"
         }
       ]
     }

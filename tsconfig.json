@@ -15,10 +15,34 @@
     "allowJs": true,
     /* Strictness */
     "strict": true,
+
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": true,
+
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+
     "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    "useUnknownInCatchVariables": true,
     "noEmit": true,
     /* Base Options: */
     "esModuleInterop": true,
+
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
     "verbatimModuleSyntax": true,
     "skipLibCheck": true
   }
