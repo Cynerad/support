@@ -129,7 +129,7 @@ describe("copyToClipboard", () => {
   });
 
   it("returns false for invalid input", async () => {
-    const result = await copyToClipboard("" as any);
+    const result = await copyToClipboard("");
     expect(result).toBe(false);
   });
 });
