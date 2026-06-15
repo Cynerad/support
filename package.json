@@ -6,7 +6,11 @@
   "description": "Helper functions for TypeScript applications",
   "author": "javad gharibi",
   "license": "MIT",
-  "keywords": ["support", "typescript", "utilities"],
+  "keywords": [
+    "support",
+    "typescript",
+    "utilities"
+  ],
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
