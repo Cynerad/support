@@ -21,6 +21,7 @@ export default antfu(
       "node/prefer-global/process": ["off"],
       "node/no-process-env": ["error"],
       "ts/no-explicit-any": "error",
+      "style/linebreak-style": "off",
       "perfectionist/sort-imports": [
         "error",
         {
