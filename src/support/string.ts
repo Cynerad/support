@@ -1,5 +1,5 @@
-const SPECIAL_CHARTERS = `!"#$%&'()*+,-./:;<=>?@[\\]^_\`{|}~`;
-const SPECIAL_CHARTERS_REGEX = /[\s!"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~]+|(?=[A-Z])/;
+const SPECIAL_CHARECTERS = `!"#$%&'()*+,-./:;<=>?@[\\]^_\`{|}~`;
+const SPECIAL_CHARECHTER_REGEX = /[\s!"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~]+|(?=[A-Z])/;
 
 function after(text: string, value: string): string {
   const index = text.indexOf(value);
@@ -39,7 +39,7 @@ function trim(text: string, characters: string): string {
 
 function camel(text: string): string {
   return text
-    .split(SPECIAL_CHARTERS_REGEX)
+    .split(SPECIAL_CHARECHTER_REGEX)
     .map((str, index) => (index === 0 ? str.toLowerCase() : capitalize(str)))
     .join("");
 }
@@ -201,4 +201,4 @@ const str = {
 };
 
 export default str;
-export { after, append, before, between, camel, capitalize, headline, kebab, limit, lowerCaseFirst, mask, pad, random, slug, snake, SPECIAL_CHARTERS, SPECIAL_CHARTERS_REGEX, squish, studly, swap, title, trim, truncate, upperCaseFirst, uuid, wordCount };
+export { after, append, before, between, camel, capitalize, headline, kebab, limit, lowerCaseFirst, mask, pad, random, slug, snake, SPECIAL_CHARECTERS as SPECIAL_CHARTERS, SPECIAL_CHARECHTER_REGEX as SPECIAL_CHARTERS_REGEX, squish, studly, swap, title, trim, truncate, upperCaseFirst, uuid, wordCount };
