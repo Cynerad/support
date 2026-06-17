@@ -35,12 +35,15 @@ const COLOR_MAP: Record<colorType, string> = {
 
 const RESET = "\x1B[0m";
 
-function getColorString(colorName: colorType): string {
+function getColorString(colorName: colorType) {
   return COLOR_MAP[colorName];
 }
 
-function log<T>(message: T, colorName: colorType = "white"): void {
-  console.log(`${getColorString(colorName)}${message}${RESET}`);
+function log<T>(message: T, colorName: colorType = "white") {
+  const color = getColorString(colorName);
+  process.stdout.write(`${color}`);
+  console.dir(message, { depth: null, colors: true });
+  process.stdout.write(`${RESET}\n`);
 }
 
 export { log };

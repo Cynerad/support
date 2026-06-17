@@ -37,6 +37,11 @@
           "target": "@lib/support/cookies.ts"
         },
         {
+          "path": "./src/support/fetch.ts",
+          "type": "registry:lib",
+          "target": "@lib/support/fetch.ts"
+        },
+        {
           "path": "./src/support/file-system.ts",
           "type": "registry:lib",
           "target": "@lib/support/file-system.ts"
