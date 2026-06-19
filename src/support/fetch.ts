@@ -80,17 +80,53 @@ class CreateFetchClient {
   }
 
   create() {
-    const request
-      = <T, ErrorT = unknown>(method: Method) =>
-        ({ endpoint, config, onError }: CreateRequestType<ErrorT>) =>
-          this.createRequest<T, ErrorT>(method, endpoint, config, onError);
-
     return {
-      get: request("GET"),
-      post: request("POST"),
-      put: request("PUT"),
-      patch: request("PATCH"),
-      delete: request("DELETE"),
+      get: <T, ErrorT = unknown>({
+        endpoint,
+        config,
+        onError,
+      }: CreateRequestType<ErrorT>) => {
+        return this.createRequest<T, ErrorT>("GET", endpoint, config, onError);
+      },
+      post: <T, ErrorT = unknown>({
+        endpoint,
+        config,
+        onError,
+      }: CreateRequestType<ErrorT>) => {
+        return this.createRequest<T, ErrorT>("POST", endpoint, config, onError);
+      },
+      put: <T, ErrorT = unknown>({
+        endpoint,
+        config,
+        onError,
+      }: CreateRequestType<ErrorT>) => {
+        return this.createRequest<T, ErrorT>("PUT", endpoint, config, onError);
+      },
+
+      patch: <T, ErrorT = unknown>({
+        endpoint,
+        config,
+        onError,
+      }: CreateRequestType<ErrorT>) => {
+        return this.createRequest<T, ErrorT>(
+          "PATCH",
+          endpoint,
+          config,
+          onError,
+        );
+      },
+      delete: <T, ErrorT = unknown>({
+        endpoint,
+        config,
+        onError,
+      }: CreateRequestType<ErrorT>) => {
+        return this.createRequest<T, ErrorT>(
+          "DELETE",
+          endpoint,
+          config,
+          onError,
+        );
+      },
     };
   }
 
